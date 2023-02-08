@@ -126,7 +126,7 @@ buttons.bid.onclick = async () => {
   })
 
   const rawState = await auctionApp.getApplicationState(true)
-  console.log(rawState, await auctionApp.getAccountState())
+  console.log(rawState, await auctionApp.getApplicationState())
   const rawHighestBidder = rawState['686967686573745f626964646572'] as Uint8Array
 
   let prevBidder: string
